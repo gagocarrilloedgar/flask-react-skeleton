@@ -1,6 +1,6 @@
 # Minimal flask-react-skeleton
 
-This is a minimal unoppinionated skeleton that uses Flask with Pyhton and Reacr with Vite, SWC & JS.
+This is a minimal unoppinionated skeleton that uses Flask with Pyhton and React with Vite, SWC & JS.
 
 ## Technologies
 
@@ -12,7 +12,7 @@ This is a minimal unoppinionated skeleton that uses Flask with Pyhton and Reacr 
 
 ## Installation
 
-Go to [Pre requisites](#pre-requisites) and make sure you have everyting
+Go to [Pre requisites](#pre-requisites) and make sure you have everything
 
 
 ```sh
@@ -46,23 +46,23 @@ Start the server
 ```
 
 ### Backend
-Go to the front-end folder
+Go to the backend folder
 
 ```bash
   cd Backend
 ```
 
 1. Install the python packages: `$ pipenv install`
-2. Create a .env file based on the .env.example: `$ cp .env.example .env` (the ones provided should be enough, you don't need to modify anything).
+2. Create an .env file based on the .env.example: `$ cp .env.example .env` (the ones provided should be enough, you don't need to modify anything).
 3. Start the environment: `$ pipenv shell`
 4. Launch docker: `$pipenv run launch_docker`
-4. DB already initiated
+5. DB already initiated
    1. Migrate the migrations: `$ pipenv run migrate` (skip if you have not made changes to the models on the `./src/api/models.py`)
    2. Run the migrations: `$ pipenv run upgrade`
    3. Run the application: `$ pipenv run start`
-5. DB not started
+6. DB not started
    1. Init the db: `$ pipenv run init`
-   2. Go to step 4
+   2. Go to step 5
 
 Once you are done you can stop the docker container using:
 
